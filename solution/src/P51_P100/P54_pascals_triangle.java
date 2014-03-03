@@ -1,8 +1,8 @@
-package P1_P50;
+package P51_P100;
 import java.util.ArrayList;
 
 
-public class P22_pascals_triangle {
+public class P54_pascals_triangle {
 
 	public static ArrayList<ArrayList<Integer>> generate(int numRows) {
         ArrayList<ArrayList<Integer>> result = new ArrayList<ArrayList<Integer>>();

@@ -2,7 +2,7 @@ package P1_P50;
 
 import java.util.ArrayList;
 
-public class P42_binary_tree_level_order_traversal {
+public class P22_binary_tree_level_order_traversal {
 
 	public class TreeNode {
 	    int val;
