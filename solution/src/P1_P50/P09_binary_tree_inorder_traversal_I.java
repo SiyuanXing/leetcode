@@ -2,7 +2,7 @@ package P1_P50;
 import java.util.ArrayList;
 
 
-public class P09_binary_tree_inorder_traversal {
+public class P09_binary_tree_inorder_traversal_I {
 
 	/**
 	 * Definition for binary tree

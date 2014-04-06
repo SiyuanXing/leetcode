@@ -1,47 +1,34 @@
 package P51_P100;
 
-import java.util.ArrayList;
+import java.util.Stack;
 
 public class P62_valid_parentheses {
 
 	public boolean isValid(String s) {
-        ArrayList<Character> text = new ArrayList<Character>();
+        Stack<Character> text = new Stack<Character>();
         int n = s.length();
-        if(n==0){
-            return true;
-        }
-        if (n%2!=0){
-            return false;
-        }
         for (int i=0;i<n;i++){
             char temp = s.charAt(i);
             if(text.size()==0){
-                text.add(temp);
+                text.push(temp);
             }
             else if (temp==')'||temp==']'||temp=='}'){
-                switch (text.get(text.size()-1)){
-                    case '(':{
-                        if (temp!=')'){
+                switch (text.pop()){
+                    case '(':
+                        if (temp!=')')
                             return false;
-                        }
                         break;
-                    }
-                    case '[':{
-                        if (temp!=']'){
+                    case '[':
+                        if (temp!=']')
                             return false;
-                        }
                         break;
-                    }
-                    case '{':{
-                        if (temp!='}'){
+                    case '{':
+                        if (temp!='}')
                             return false;
-                        }
-                    }
                 }
-                text.remove(text.size()-1);
             }
             else {
-                text.add(temp);
+                text.push(temp);
             }
         }
         if(text.size()!=0){

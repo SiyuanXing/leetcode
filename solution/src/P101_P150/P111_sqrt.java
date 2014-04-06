@@ -2,7 +2,7 @@ package P101_P150;
 
 public class P111_sqrt {
 
-	public static int sqrt(int x) {
+	public int sqrt(int x) {
         if (x<=0)
             return 0;
         if (x <4){
@@ -22,8 +22,4 @@ public class P111_sqrt {
         }
         return (start+end)/2;
     }
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		sqrt(2147395599);
-	}
 }
